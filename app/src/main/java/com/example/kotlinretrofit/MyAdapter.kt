@@ -26,7 +26,7 @@ class MyAdapter (val context:Context, val userList:List<myDataItem>):RecyclerVie
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.userID.text = userList[position].userId.toString()
-        holder.title.text = userList[position].title
+        holder.title.text = userList[position].body
     }
 
     override fun getItemCount(): Int {
